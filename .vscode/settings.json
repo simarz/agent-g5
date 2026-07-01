@@ -1,0 +1,7 @@
+{
+  "python.defaultInterpreterPath": "C:/Users/mineb/AppData/Local/Programs/Python/Python311/python.exe",
+  "code-runner.executorMap": {
+    "python": "C:/Users/mineb/AppData/Local/Programs/Python/Python311/python.exe -u"
+  },
+  "code-runner.runInTerminal": true
+}
