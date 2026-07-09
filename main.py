@@ -1,12 +1,15 @@
-from engine import generate
 from datasets import load_dataset
-import random
+from data import load_problems
+from data import Problem
 
 def main():
-    test_data = load_dataset("openai/gsm8k", "main", splti="train")
-    question_number = random.randrange(len(test_data))
-    q = test_data[question_number]["question"]
-    print(generate(q))
+    probs = load_problems("validation")
+    print(len(probs))          # expect 1034
+    p = probs[0]
+    print(p.question)
+    print(p.gold_sql)
+    print(p.db_id, p.db_path.exists())
+
 
 if __name__ == "__main__":
     main()
